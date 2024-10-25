@@ -1,5 +1,5 @@
 {
-  "name": "turborepo-tutorial",
+  "name": "@natthakan/turborepo-yarn-tutorial",
   "private": true,
   "scripts": {
     "build": "turbo build",
