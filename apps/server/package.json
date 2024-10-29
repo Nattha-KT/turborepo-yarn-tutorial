@@ -15,6 +15,7 @@
   "devDependencies": {
     "@types/express": "^5.0.0",
     "@types/node": "^22.8.2",
+    "eslint": "^8",
     "nodemon": "^3.1.7",
     "typescript": "^5.6.3"
   },

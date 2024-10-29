@@ -1,9 +1,9 @@
 {
-    "extends":"../../packages/typescript-config/server.json",
-    "compilerOptions": {
-        "rootDir": ".",
-        "outDir": "dist"
-    },
-    "include": ["**/*.ts"],
-    "exclude": ["node_modules"]
+  "extends": "@repo/typescript-config/server.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "./dist"
+  },
+  "include": ["src/"],
+  "exclude": ["node_modules", ".turbo", "coverage", "dist", "src/**/*.test.ts"]
 }

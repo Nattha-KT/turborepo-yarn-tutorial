@@ -1,3 +1,3 @@
 export interface HelloInterface {
-    helle:boolean;
+  helle: boolean
 }
