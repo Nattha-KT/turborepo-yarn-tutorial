@@ -1,5 +1,5 @@
 {
-  "name": "next-app-1",
+  "name": "next-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,7 +13,7 @@
     "react": "19.0.0-rc-69d4b800-20241021",
     "react-dom": "19.0.0-rc-69d4b800-20241021",
     "server": "*",
-    "@repo/ui": "*"
+    "ui": "*"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -1,5 +1,5 @@
 {
-  "name": "next-app-2",
+  "name": "next-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,7 +13,7 @@
     "react": "19.0.0-rc-69d4b800-20241021",
     "react-dom": "19.0.0-rc-69d4b800-20241021",
     "server": "*",
-    "ui": "*"
+    "@repo/ui": "*"
   },
   "devDependencies": {
     "@types/node": "^20",
