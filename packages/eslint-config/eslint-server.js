@@ -34,7 +34,7 @@ module.exports = {
   overrides: [
     {
       env: {
-        jest: true,
+        // jest: true,
       },
       files: ['**/__tests__/**/*.[jt]s', '**/?(*.)+(spec|test).[jt]s'],
       extends: ['plugin:jest/recommended'],

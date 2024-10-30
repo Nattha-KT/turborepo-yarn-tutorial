@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint src --fix"
+    "lint": "eslint src --fix",
+    "test": "echo Test in next-web"
   },
   "dependencies": {
     "next": "15.0.1",
