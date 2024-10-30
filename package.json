@@ -12,6 +12,7 @@
     "turbo": "^2.2.3",
     "typescript": "5.4.5"
   },
+  
   "engines": {
     "node": ">=18"
   },
@@ -19,5 +20,32 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "turbo": {
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          "dist/**",
+          ".next/**"
+        ]
+      },
+      "test": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          "coverage/**"
+        ]
+      },
+      "lint": {
+        "outputs": []
+      },
+      "dev": {
+        "cache": false
+      }
+    }
+  }
 }

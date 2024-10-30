@@ -25,30 +25,24 @@ module.exports = {
   },
   plugins: ['only-warn', '@typescript-eslint', 'import'],
   settings: {
-    'import/resolver': {
-      alwaysTryTypes: true,
-      typescript: {
-        project,
-      },
-    },
+    // 'import/resolver': {
+    //   alwaysTryTypes: false,
+    //   typescript: {
+    //     project,
+    //   },
+    // },
     next: {
       rootDir: ['apps/*/', 'packages/*/'],
     },
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
-    // 'import/resolver': {
-    //   typescript: {
-    //     alwaysTryTypes: true,
-    //     project: ['apps/*/tsconfig.json'],
-    //   },
-    // },
   },
   rules: {
     'react/function-component-definition': [
       2,
       {
-        namedComponents: 'arrow-function',
+        // namedComponents: 'arrow-function',
       },
     ],
     '@next/next/no-html-link-for-pages': 'off',
@@ -79,5 +73,6 @@ module.exports = {
     'coverage',
     'dist',
     '.turbo',
+    '*.config.mjs'
   ],
 }

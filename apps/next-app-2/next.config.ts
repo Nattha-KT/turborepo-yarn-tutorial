@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
+import withTM from 'next-transpile-modules'
+
+const withTranspileModules = withTM(['@repo/ui'])
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  reactStrictMode: true,
+}
 
-export default nextConfig;
+export default withTranspileModules(nextConfig)
